@@ -1,6 +1,11 @@
 <?php
 
-namespace App;
+/*
+ * This file is part of the solrphp playground.
+ * (c) wicliff <wicliff.wolda@gmail.com>
+ */
+
+namespace Solrphp\Playground;
 
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
