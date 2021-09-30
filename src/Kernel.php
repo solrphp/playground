@@ -12,10 +12,16 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 use Symfony\Component\HttpKernel\Kernel as BaseKernel;
 use Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator;
 
+/**
+ * Kernel.
+ */
 class Kernel extends BaseKernel
 {
     use MicroKernelTrait;
 
+    /**
+     * @param \Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator $container
+     */
     protected function configureContainer(ContainerConfigurator $container): void
     {
         $container->import('../config/{packages}/*.yaml');
@@ -29,6 +35,9 @@ class Kernel extends BaseKernel
         }
     }
 
+    /**
+     * @param \Symfony\Component\Routing\Loader\Configurator\RoutingConfigurator $routes
+     */
     protected function configureRoutes(RoutingConfigurator $routes): void
     {
         $routes->import('../config/{routes}/'.$this->environment.'/*.yaml');

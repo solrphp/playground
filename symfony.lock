@@ -29,73 +29,14 @@
             "config/routes/annotations.yaml"
         ]
     },
-    "doctrine/cache": {
-        "version": "2.1.1"
-    },
     "doctrine/collections": {
         "version": "1.6.8"
-    },
-    "doctrine/common": {
-        "version": "3.1.2"
-    },
-    "doctrine/dbal": {
-        "version": "2.13.3"
-    },
-    "doctrine/deprecations": {
-        "version": "v0.5.3"
-    },
-    "doctrine/doctrine-bundle": {
-        "version": "2.4",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "2.4",
-            "ref": "bac5c852ff628886de2753215fe5eb1f9ce980fb"
-        },
-        "files": [
-            "config/packages/doctrine.yaml",
-            "config/packages/prod/doctrine.yaml",
-            "config/packages/test/doctrine.yaml",
-            "src/Entity/.gitignore",
-            "src/Repository/.gitignore"
-        ]
-    },
-    "doctrine/doctrine-migrations-bundle": {
-        "version": "3.1",
-        "recipe": {
-            "repo": "github.com/symfony/recipes",
-            "branch": "master",
-            "version": "3.1",
-            "ref": "ee609429c9ee23e22d6fa5728211768f51ed2818"
-        },
-        "files": [
-            "config/packages/doctrine_migrations.yaml",
-            "migrations/.gitignore"
-        ]
-    },
-    "doctrine/event-manager": {
-        "version": "1.1.1"
-    },
-    "doctrine/inflector": {
-        "version": "2.0.3"
     },
     "doctrine/instantiator": {
         "version": "1.4.0"
     },
     "doctrine/lexer": {
         "version": "1.2.1"
-    },
-    "doctrine/migrations": {
-        "version": "3.2.1"
-    },
-    "doctrine/orm": {
-        "version": "2.9.5"
-    },
-    "doctrine/persistence": {
-        "version": "2.2.2"
-    },
-    "doctrine/sql-formatter": {
-        "version": "1.1.1"
     },
     "egulias/email-validator": {
         "version": "3.1.1"
@@ -132,6 +73,12 @@
     },
     "infection/infection": {
         "version": "0.25.1"
+    },
+    "jms/metadata": {
+        "version": "2.5.1"
+    },
+    "jms/serializer": {
+        "version": "3.14.0"
     },
     "justinrainbow/json-schema": {
         "version": "5.2.11"
@@ -180,6 +127,9 @@
     },
     "phpspec/prophecy": {
         "version": "1.14.0"
+    },
+    "phpstan/phpdoc-parser": {
+        "version": "0.5.7"
     },
     "phpstan/phpstan": {
         "version": "0.12.99"
@@ -348,6 +298,18 @@
             "phpcs.xml.dist"
         ]
     },
+    "symfony/apache-pack": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "9d254a22efca7264203eea98b866f16f944b2f09"
+        },
+        "files": [
+            "public/.htaccess"
+        ]
+    },
     "symfony/asset": {
         "version": "v5.3.4"
     },
@@ -395,9 +357,6 @@
     },
     "symfony/deprecation-contracts": {
         "version": "v2.4.0"
-    },
-    "symfony/doctrine-bridge": {
-        "version": "v5.3.7"
     },
     "symfony/dom-crawler": {
         "version": "v5.3.7"

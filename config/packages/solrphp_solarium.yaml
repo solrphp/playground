@@ -31,6 +31,7 @@ solrphp_solarium:
         - { name: 'manu', type: 'text_general' }
         - { name: 'name', type: 'text_general' }
         - { name: 'payloads', type: 'text_general' }
+        - { name: 'midgets', type: 'text_general' }
         - { name: 'popularity', type: 'plongs' }
         - { name: 'price', type: 'pdoubles' }
         - { name: 'price_c', type: 'text_general' }
@@ -68,20 +69,20 @@ solrphp_solarium:
             - { name: 'config', value: 'solr-data-config.xml' }
       query:
         filter_cache:
-          autowarm_count: '50%'
+          autowarm_count: 50
           size: 30000
           initial_size: 1512
           class: 'solr.CaffeineCache'
           name: filterCache
         query_result_cache:
-          autowarm_count: '0'
-          size: 512
-          initial_size: 512
-          class: 'solr.LRUCache'
+          autowarm_count: 0
+          size: 1024
+          initial_size: 1024
+          class: 'solr.CaffeineCache'
           name: queryResultCache
         document_cache:
-          autowarm_count: '0'
-          size: 512
+          autowarm_count: 0
+          size: 1024
           initial_size: 512
           class: 'solr.LRUCache'
           name: documentCache
